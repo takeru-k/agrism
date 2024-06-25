@@ -1,0 +1,25 @@
+@use "../setting/setting";
+
+.p-message {
+  margin: 24px auto 0;
+  border: 1px solid #dadada;
+  padding: 16px;
+  max-width: 700px;
+
+  p {
+    font-size: setting.$fz-text;
+    line-height: 2.35;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-message {
+    margin-top: 40px;
+    padding: 40px;
+
+    p {
+      margin-bottom: 24px;
+    }
+  }
+}

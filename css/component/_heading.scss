@@ -1,0 +1,21 @@
+@use "../setting/setting";
+
+.c-heading-top {
+  line-height: 1.5;
+}
+
+.c-heading-top__center {
+  text-align: center;
+}
+
+.c-heading-top__english {
+  color: setting.$color-main;
+  font-family: setting.$font-english;
+  letter-spacing: 0.04em;
+  font-size: clamp(2.5rem, 1.955rem + 2.73vw, 4rem);
+  text-transform: capitalize;
+}
+
+.c-heading-top__heading {
+  font-size: clamp(1.25rem, 1.068rem + 0.91vw, 1.75rem);
+}

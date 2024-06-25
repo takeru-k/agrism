@@ -1,0 +1,82 @@
+@use "../setting/setting";
+
+.p-topService {
+  background: url(../images/top/top-service.jpg) no-repeat center center/cover;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 64px 0 80px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.p-topService__contents {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.p-topService__heading {
+  p {
+    font-size: clamp(2.5rem, 1.955rem + 2.73vw, 4rem);
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: #fff;
+  }
+}
+
+@media not all and (min-width: 767px) {
+  .br-pc {
+    display: none;
+  }
+}
+
+.p-topService__title {
+  font-size: clamp(1.375rem, 1.057rem + 1.59vw, 2.25rem);
+}
+
+.p-topService__desc {
+  margin-top: 16px;
+  font-size: setting.$fz-text;
+  line-height: 2.35;
+}
+
+@media (min-width: 768px) {
+  .p-topService__contents {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .p-topService__heading {
+    width: 48%;
+  }
+
+  .p-topService__main {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-topService {
+    padding: 88px 0;
+  }
+
+  .p-topService__contents {
+    gap: 52px;
+  }
+
+  .p-topService__desc {
+    margin-bottom: 44px;
+  }
+}

@@ -1,0 +1,32 @@
+@use "../setting/setting";
+
+.p-special {
+  padding: 40px 0 64px;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.p-special__contents {
+  margin-top: 16px;
+  img {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: setting.$fz-text;
+    line-height: 2;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-special {
+    padding: 64px 0 88px;
+  }
+
+  .p-special__contents {
+    margin-top: 24px;
+  }
+}

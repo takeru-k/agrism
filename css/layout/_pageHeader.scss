@@ -1,0 +1,62 @@
+@use "../setting/setting";
+
+.l-pageHeader {
+  padding: 56px 0;
+  background: url(../images/top/slider03.jpg) no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+}
+
+.l-pageHeader__text {
+  color: #fff;
+  text-align: center;
+
+  z-index: 2;
+  position: relative;
+
+  h2 {
+    font-weight: normal;
+    line-height: 1.2;
+    font-size: clamp(1.25rem, 1.068rem + 0.91vw, 1.75rem);
+    letter-spacing: 2px;
+  }
+
+  span {
+    color: #fff;
+    font-family: setting.$font-english;
+    letter-spacing: 0.04em;
+    font-size: clamp(2.5rem, 1.955rem + 2.73vw, 4rem);
+    text-transform: capitalize;
+  }
+}
+
+.l-pageHeader__heading {
+  text-align: center;
+
+  span {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .l-pageHeader {
+    padding: 80px 0;
+  }
+}

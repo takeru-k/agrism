@@ -1,0 +1,55 @@
+@use "../setting/setting";
+.p-topAbout {
+  padding: 72px 0 88px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    background: url(../images/top/top-about.png) no-repeat center center/cover;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+}
+
+.p-topAbout__text {
+  margin-top: 16px;
+  p {
+    font-size: setting.$fz-text;
+    line-height: 2.35;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+
+  @media not all and (min-width: 1023px) {
+    text-align: justify;
+  }
+}
+
+.p-topAbout__images {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .p-topAbout {
+    &:before {
+      background: url(../images/top/top-about-pc.png) no-repeat center
+        center/cover;
+      width: 72%;
+    }
+  }
+
+  .p-topAbout__texts {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-topAbout {
+    padding: 88px 0 120px;
+  }
+}

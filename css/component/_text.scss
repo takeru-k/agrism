@@ -1,0 +1,31 @@
+@use "../setting/setting";
+
+.c-text-box {
+  margin: 16px auto 0;
+  max-width: 620px;
+
+  p {
+    margin-bottom: 12px;
+    font-size: setting.$fz-text;
+    line-height: 2.35;
+  }
+}
+
+@media (min-width: 1024px) {
+  .c-text-box {
+    margin-top: 32px;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.c-text-box__center {
+  inline-size: fit-content;
+  margin-inline: auto;
+
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+}
