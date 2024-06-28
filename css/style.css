@@ -1289,7 +1289,7 @@ div.wpcf7 .wpcf7-spinner {
   aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
 }
 .p-special__contents p {
   font-size: clamp(1rem, 0.875rem + 0.31vw, 1.125rem);
